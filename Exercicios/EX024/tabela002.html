@@ -11,28 +11,47 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         td.num{
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Populção das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -147,10 +166,23 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>203.078.389</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo accusantium corporis eos, praesentium sapiente in vero, dolor fugiat ipsam deleniti dolorem facere, deserunt dignissimos doloribus quam. Quaerat, hic placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iusto eos odio doloremque, ut, hic iste, repudiandae consequuntur placeat rem reiciendis deserunt expedita voluptatibus asperiores fugiat quidem ab praesentium. Dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate consequuntur cum sed nesciunt expedita, culpa impedit a aut? Et itaque reprehenderit ipsa dicta necessitatibus nihil, aut dolorum quis labore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugiat non ad unde, harum ipsum maiores exercitationem vel animi eos iure cumque similique! Maiores natus corporis dolorum voluptates adipisci ducimus?</p>
 </body>
 </html>
