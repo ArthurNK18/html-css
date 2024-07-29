@@ -11,9 +11,21 @@
         table {
             border-collapse: collapse;
         }
-        tr, th {
+        tr, th, td {
             border: 1px solid black;
+            width: 100px;
             padding: 10px;
+        }
+        th {
+            background-color: gray;
+            color: white;
+        }
+        th.Disciplinas {
+            background-color: white;
+            color: black;
+        }
+        th.media {
+            text-align: left;
         }
     </style>
 </head>
@@ -21,29 +33,47 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
+                <th rowspan="5">Área</th>
                 <th>Disciplinas</th>
                 <th>Notas</th>
-                <th>Média</th>
-            </tr>
+                <th rowspan="5">Média</th>
         </thead>
         <tbody>
             <tr>
-                <th>Exatas</th>
+                <th rowspan="5" scope="rowgroup" class="Disciplinas">Exatas</th>
+            </tr>
+            <tr>
                 <td>Matemática</td>
-                <td>0.0</td>
+
             </tr>
             <tr>
                 <td>Física</td>
-                <td>0.0</td>
+
             </tr>
             <tr>
                 <td>Química</td>
-                <td>0.0</td>
+
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td>0.0</td>
+
+            </tr>
+            <tr>
+                <th colspan="5" class="media">Média de exatas</th>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup" class="Disciplinas">Humanas</th>
+            </tr>
+            <tr>
+                <td>História</td>
+
+            </tr>
+            <tr>
+                <td>Geografia</td>
+
+            </tr>
+            <tr>
+                <th colspan="5" class="media">Media de Humanas</th>
             </tr>
         </tbody>
     </table>
