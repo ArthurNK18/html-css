@@ -14,7 +14,7 @@ header{
     background-color: rgb(148, 148, 148);
 }
 
-h1, header{
+header h1 {
     padding: 10px;
     text-align: center;
 }
@@ -35,6 +35,7 @@ span#burger:hover {
 
 menu {
     display: none;
+    text-align: left;
 }
 
 menu ul {
