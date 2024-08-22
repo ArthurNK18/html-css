@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        div.contanier {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        div#cxA {
+            flex: 1 0 150px;
+
+            /*flex-basis: 200px;*/
+        }
+
+        div#cxB {
+            flex: 1 1 150px;
+
+           /* flex-basis: 200px;*/
+        }
+
+        div#cxC {
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto;*/
+
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxA">C</div>
+    </div>
+</body>
+</html>
